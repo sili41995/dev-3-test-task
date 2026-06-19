@@ -1,13 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dev-3</title>
+    <meta name="description" content="Інтерактивний редактор тексту з перетягуванням окремих літер та їх групповим виділенням" />
+    <title>Letter Drag — dev-3</title>
     <link rel="stylesheet" href="/src/style/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div class="app">
+      <div class="form-row">
+        <input class="input js-input" type="text" placeholder="Введіть текст..." />
+        <button class="btn js-btn">Застосувати</button>
+      </div>
+      <div class="js-stage stage"></div>
+    </div>
+    <div class="js-selection-rect selection-rect"></div>
     <script type="module" src="/src/script/main.ts"></script>
   </body>
 </html>
